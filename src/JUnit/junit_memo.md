@@ -74,7 +74,45 @@
 
 ---
 
-有名なテスト用のアサーション
-・assertEquals(期待値、実測値)　　期待値と実測値が等しいときにテスト成功
-・assertThrows(発生するであろう例外のクラス名、テスト対象の処理をラムダ式で書く)
-　 ex.
+## 有名なテスト用のアサーション
+
+&emsp;JUnit には、テスト結果を判定するためのアサーションメソッドがいくつかあります。  
+ここでは代表的なものをまとめます。
+
+---
+
+## assertEquals(期待値、実測値)
+
+&emsp;期待値と実測値が等しいときにテスト成功
+
+<div align="center">
+  <img src="../../image/JUnit/assertEquals.png" alt="assertEquals" style="width:70%;">
+</div>
+
+---
+
+## assertThrows(発生するであろう例外のクラス名、テスト対象の処理をラムダ式で書く)
+
+&emsp;指定した例外が発生することを確認したい場合に使います
+
+<div align="center">
+  <img src="../../image/JUnit/assertThrows.png" alt="assertThrows" style="width:70%;">
+</div>
+
+---
+
+## fail("失敗時のメッセージ"※任意)
+
+&emsp;強制的に失敗させたいとき、例外が発生しているか確認する用途などで使います
+
+<div align="center">
+  <img src="../../image/JUnit/fail.png" alt="fail" style="width:70%;">
+</div>
+
+---
+
+## ほかにも以下のようなアサーションメソッドあるよ
+
+<div align="center">
+  <img src="../../image/JUnit/other_assert.png" alt="other_assert" style="width:70%;">
+</div>
