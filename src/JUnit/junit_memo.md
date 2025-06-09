@@ -76,8 +76,7 @@
 
 ## 有名なテスト用のアサーション
 
-&emsp;JUnit には、テスト結果を判定するためのアサーションメソッドがいくつかあります。  
-ここでは代表的なものをまとめます。
+&emsp;JUnit には、テスト結果を判定するためのアサーションメソッドがいくつかあります。ここでは代表的なものをまとめます。
 
 ---
 
@@ -115,4 +114,36 @@
 
 <div align="center">
   <img src="../../image/JUnit/other_assert.png" alt="other_assert" style="width:70%;">
+</div>
+
+## テストケースの構造化
+
+- `@Nested`を付与することで、テストクラス内にネストされたクラスを作成し、テストケースを階層的に整理できます。
+- 同じメソッドに対して条件分岐やパターンごとに複数のテストを行いたいときに便利です。
+
+<div align="center">
+  <img src="../../image/JUnit/Nested.png" alt="Nested" style="width:70%;">
+</div>
+
+---
+
+## タグ付け
+
+- `@Tag`アノテーションを使うことで、テストにラベル（タグ）をつけることができます。
+- 実行時にタグでフィルタリングし、特定のテストだけを選んで実行することが可能です。
+- Eclipse の場合は、テストクラスを右クリック →「実行」→「実行の構成」→「タグの包含・除外」でカテゴライズできます。
+
+<div align="center">
+  <img src="../../image/JUnit/Tag.png" alt="Tag" style="width:70%;">
+</div>
+
+---
+
+## 共有フィクスチャ
+
+- `@BeforeEach`を付与したメソッドは「セットアップメソッド」と呼ばれます。
+- 各テストメソッドの実行前に毎回自動で呼び出され、テストの準備処理（初期化など）を共通化できます。
+
+<div align="center">
+  <img src="../../image/JUnit/BeforeEach.png" alt="BeforeEach" style="width:70%;">
 </div>
