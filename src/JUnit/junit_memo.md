@@ -147,3 +147,23 @@
 <div align="center">
   <img src="../../image/JUnit/BeforeEach.png" alt="BeforeEach" style="width:50%;">
 </div>
+
+## 事前条件の記述
+
+・assumeTrue 　　条件が True の場合にテスト続行
+
+<div align="center">
+  <img src="../../image/JUnit/assumeTrue.png" alt="assumeTrue" style="width:50%;">
+</div>
+
+・assumingThat 条件が True の場合に第 2 引数の処理を実行する
+
+<div align="center">
+  <img src="../../image/JUnit/assumingThat.png" alt="assumingThat" style="width:50%;">
+</div>
+
+・@Disabled を使用すると、テストを無効化できる
+
+<div align="center">
+  <img src="../../image/JUnit/Disabled.png" alt="Disabled" style="width:50%;">
+</div>
