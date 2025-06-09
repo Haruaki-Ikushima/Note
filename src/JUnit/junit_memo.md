@@ -85,7 +85,7 @@
 &emsp;期待値と実測値が等しいときにテスト成功
 
 <div align="center">
-  <img src="../../image/JUnit/assertEquals.png" alt="assertEquals" style="width:70%;">
+  <img src="../../image/JUnit/assertEquals.png" alt="assertEquals" style="width:50%;">
 </div>
 
 ---
@@ -95,7 +95,7 @@
 &emsp;指定した例外が発生することを確認したい場合に使います
 
 <div align="center">
-  <img src="../../image/JUnit/assertThrows.png" alt="assertThrows" style="width:70%;">
+  <img src="../../image/JUnit/assertThrows.png" alt="assertThrows" style="width:50%;">
 </div>
 
 ---
@@ -105,7 +105,7 @@
 &emsp;強制的に失敗させたいとき、例外が発生しているか確認する用途などで使います
 
 <div align="center">
-  <img src="../../image/JUnit/fail.png" alt="fail" style="width:70%;">
+  <img src="../../image/JUnit/fail.png" alt="fail" style="width:50%;">
 </div>
 
 ---
@@ -113,7 +113,7 @@
 ## ほかにも以下のようなアサーションメソッドあるよ
 
 <div align="center">
-  <img src="../../image/JUnit/other_assert.png" alt="other_assert" style="width:70%;">
+  <img src="../../image/JUnit/other_assert.png" alt="other_assert" style="width:50%;">
 </div>
 
 ## テストケースの構造化
@@ -122,7 +122,7 @@
 - 同じメソッドに対して条件分岐やパターンごとに複数のテストを行いたいときに便利です。
 
 <div align="center">
-  <img src="../../image/JUnit/Nested.png" alt="Nested" style="width:70%;">
+  <img src="../../image/JUnit/Nested.png" alt="Nested" style="width:50%;">
 </div>
 
 ---
@@ -134,7 +134,7 @@
 - Eclipse の場合は、テストクラスを右クリック →「実行」→「実行の構成」→「タグの包含・除外」でカテゴライズできます。
 
 <div align="center">
-  <img src="../../image/JUnit/Tag.png" alt="Tag" style="width:70%;">
+  <img src="../../image/JUnit/Tag.png" alt="Tag" style="width:50%;">
 </div>
 
 ---
@@ -145,5 +145,5 @@
 - 各テストメソッドの実行前に毎回自動で呼び出され、テストの準備処理（初期化など）を共通化できます。
 
 <div align="center">
-  <img src="../../image/JUnit/BeforeEach.png" alt="BeforeEach" style="width:70%;">
+  <img src="../../image/JUnit/BeforeEach.png" alt="BeforeEach" style="width:50%;">
 </div>
