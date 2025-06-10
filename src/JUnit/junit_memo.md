@@ -150,20 +150,55 @@
 
 ## 事前条件の記述
 
-・assumeTrue 　　条件が True の場合にテスト続行
+&emsp;JUnit では、特定の条件下でのみテストを実行したい場合や、一時的にテストを無効化したい場合に便利な仕組みが用意されています。
+
+---
+
+### assumeTrue
+
+- `assumeTrue` は、指定した条件が **true** の場合のみテストを続行します。
+- 条件が **false** になると、後続のテスト処理はスキップされます。
 
 <div align="center">
   <img src="../../image/JUnit/assumeTrue.png" alt="assumeTrue" style="width:50%;">
 </div>
 
-・assumingThat 条件が True の場合に第 2 引数の処理を実行する
+---
+
+### assumingThat
+
+- `assumingThat` は、第一引数の条件が **true** の場合のみ、第二引数（ラムダ式）内の処理を実行します。
+- 条件が **false** の場合は、第二引数の処理は実行されませんが、テスト自体はスキップされません。
 
 <div align="center">
   <img src="../../image/JUnit/assumingThat.png" alt="assumingThat" style="width:50%;">
 </div>
 
-・@Disabled を使用すると、テストを無効化できる
+---
+
+### @Disabled
+
+- `@Disabled` アノテーションを使うと、そのテストメソッド（またはクラス）を実行時に無効化（スキップ）できます。
+- 一時的にテストを実行したくない場合などに便利です。
 
 <div align="center">
   <img src="../../image/JUnit/Disabled.png" alt="Disabled" style="width:50%;">
+</div>
+
+### パラメータ化テスト
+
+#### @ParameterizedTest
+
+&emsp;パラメータ化テスト用のメソッドに付与します。
+
+#### @ValueSource
+
+&emsp;`String`、`int`、`long`、`double`などの配列を指定し、配列の要素を先頭から順番にテストメソッドへ渡します。
+
+#### @CsvSource 　　
+
+&emsp;カンマ区切り文字列の配列を指定し、配列の前から順番にテスト
+
+<div align="center">
+  <img src="../../image/JUnit/CsvSource.png" alt="CsvSource" style="width:50%;">
 </div>
